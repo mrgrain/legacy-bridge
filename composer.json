@@ -1,0 +1,16 @@
+{
+  "name": "frogsystem/legacy-bridge",
+  "description": "Bridge for legacy Frogsystem 2 code to the new application architecture.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Moritz Kornher",
+      "email": "mail@moritzkornher.de"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Frogsystem\\Legacy\\Bridge\\": "src/"
+    }
+  }
+}
