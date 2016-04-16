@@ -31,7 +31,7 @@ class UrlMiddleware
 
         // skip admin
         if (0 === strpos($path, "/admin")) {
-            return $next($request);
+            return $next($request, $response);
         }
 
         // check seo
