@@ -11,6 +11,9 @@
   "autoload": {
     "psr-4": {
       "Frogsystem\\Legacy\\Bridge\\": "src/"
-    }
+    },
+    "files": [
+      "src/helpers.php"
+    ]
   }
 }
