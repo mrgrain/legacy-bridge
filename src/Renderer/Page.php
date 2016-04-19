@@ -1,6 +1,7 @@
 <?php
 namespace Frogsystem\Legacy\Bridge\Renderer;
 
+use function Frogsystem\Legacy\Bridge\get_copyright;
 use Frogsystem\Legacy\Bridge\Services\Config;
 use Frogsystem\Legacy\Bridge\Services\Database;
 use Frogsystem\Metamorphosis\Contracts\RendererInterface;
