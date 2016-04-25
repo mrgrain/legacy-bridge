@@ -16,15 +16,6 @@ use Interop\Container\ContainerInterface;
 class BridgeApplication extends WebApplication
 {
     /**
-     * @var array
-     */
-    protected $middleware = [
-        UrlMiddleware::class,
-        AliasMiddleware::class,
-        AnalyticsMiddleware::class,
-    ];
-
-    /**
      * @param ContainerInterface $delegate
      */
     public function __construct(ContainerInterface $delegate)
@@ -37,6 +28,11 @@ class BridgeApplication extends WebApplication
 
         // call parent and load huggables
         parent::__construct($delegate);
+
+        $this
+            ->add(UrlMiddleware::class)
+            ->add(AliasMiddleware::class)
+            ->add(AnalyticsMiddleware::class);
     }
 
     /**
