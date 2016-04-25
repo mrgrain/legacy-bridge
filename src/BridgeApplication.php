@@ -30,9 +30,9 @@ class BridgeApplication extends WebApplication
         parent::__construct($delegate);
 
         $this
-            ->add(UrlMiddleware::class)
-            ->add(AliasMiddleware::class)
-            ->add(AnalyticsMiddleware::class);
+            ->push(UrlMiddleware::class)
+            ->push(AliasMiddleware::class)
+            ->push(AnalyticsMiddleware::class);
     }
 
     /**
